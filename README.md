@@ -34,6 +34,18 @@ in root directory
 ## for start 
 <pre><code>npm install</code></pre>
 
+## set ganache network 
+hostname: localhost
+
+port :8545
+
+network ID : 5778
+
+MNEMONIC : shaft clap gun expire course crouch magnet furnace grant shop used vacant
+
+![Alt text](ganache_set.jpg)
+
+
 ## for run test
 <pre><code>truffle test</code></pre>
 
@@ -49,12 +61,6 @@ http://localhost:3000
 then you can see as below
 ![Alt text](2.jpg)
 
-## set ganache network 
-hostname: localhost
-port :8545
-network ID : 5778
-MNEMONIC : shaft clap gun expire course crouch magnet furnace grant shop used vacant
-![Alt text](ganache_set.jpg)
 
 ### 1) input your questions and information and click button 'question set'
 ![Alt text](userinterface2.jpg)

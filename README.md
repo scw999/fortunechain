@@ -111,13 +111,14 @@ then the registered solutionist record is deleted
 
 # 6. specification : requirement 
 
-1. user interface
+### 1) user interface
 -> localhost:3000 
 
-2. Test Requirements
+### 2) Test Requirements
 
 testFortuneChain.js 
 truffle test network --ganache
+
 -> test scenario
 1. contact owner check test
 2. ganache second account -> set a new questione
@@ -134,3 +135,15 @@ truffle test network --ganache
 
 assert value check, all of event and return variable check
 
+### 3) Design Pattern Requirements 
+described at  design_pattern_desicions.md
+
+### 5) Library 
+It is used SafeMath.sol as library
+
+### 6) Additional Requirements 
+at FortuneChain.sol comment is existed with comment rule 
+
+### 7) Stretch Goals 
+it is deployed to rinkeby testnet 
+you can find contract address at deployed_addresses.txt

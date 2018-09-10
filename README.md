@@ -46,6 +46,20 @@ in root directory
 then open chrome with address 
 http://localhost:3000
 
+then you can see as below
+![Alt text](2.jpg)
+
+### input your questions and information and click button 'question set'
+![Alt text](userinterface2.jpg)
+
+### then you can see your question tarot card like below
+![Alt text](userinterface.jpg)
+
+### and login with other account and registration and send answer
+
+### and login with first account then accept or reject
+
+## it will progress as below state machine
 
 # 5.State 
 ![Alt text](fortune_chain.png)

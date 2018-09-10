@@ -76,24 +76,25 @@ then you can see as below
 
 # 5.State 
 ![Alt text](fortune_chain.png)
-## <questioner>
-### 1. for creating and setting new question, 
-   then below is needed to do questioner
-	#### 1) input question information
-	#### 2) deposit bounty price
 
-## <solutionist>
-### 2. register a question as a solutionist
+## at questioner account
+### <1> for creating and setting new question
+then below is needed to do questioner
+#### 1) input question information
+#### 2) deposit bounty price
+
+## at solutionist account
+### <2> register a question as a solutionist 
 #### 1) pay 1% as a Entry fee.
 Then, it is success to register then solutionist can get full question information
 Solutionist should send full solution within 3 days. If not, questioner can  change to dismiss state.
 
-### 3. solution is offered 
+### <3> solution is offered 
 
-## <questioner>
+## at questioner account
  questioner can check solution demo and solutionist information (level and average weighted grade) 
 
-### 4. questioner decide to accept or reject question
+### <4> questioner decide to accept or reject question
 #### 1) if questioner click accept button
 then your deposited bounty price is transfer to solutionist
 and solutionist level is upgrade and questioner get full solution
@@ -102,9 +103,9 @@ then question status is back to like as set state.
 then the registered solutionist record is deleted   
 #### 3) if questioner read full solution, then questioner can set solution grade. This is applied to weighted by bounty price 
 
-## 5. questioner can dismiss within 3 situation 
-#### 1)when question first set
-#### 2)when 3 days after registered solutionist
+### <5> questioner can dismiss within 3 situation 
+#### 1) when question first set
+#### 2) when 3 days after registered solutionist
 #### 3) offered solution reject 
 
 

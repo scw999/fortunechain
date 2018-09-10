@@ -1,0 +1,1 @@
+FortuneChain.sol contract address (Rinkeby) : 0x7a77c3eE134290EFADeC5AD624c2D95335df8A9C  

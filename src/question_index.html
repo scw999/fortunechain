@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>The Fortune Chain - Believe Land </title>
+    <style type = "text/css">
+    .main {
+       background: url(images/universe_bg4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center
+      }
+   
+      .header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        line-height: 1.6;
+        font-weight: bold;
+        font-style: italic;
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 1px #fff;
+        
+      }
+      .event {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        
+      }
+
+      .panel-fortuneChain {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        color: rgb(112, 33, 33);
+        width:600px;
+        text-align: center
+      
+      }
+
+      .list {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        color: rgb(112, 33, 33);
+        width:600px;
+        text-align: center;
+      
+      }
+
+
+
+      .card1 {
+        position: relative;
+        left: 207px;
+        top: 200px;
+        box-shadow: 2px 2px 5px 1px rgb(148, 143, 99);
+      }
+      .card2 {
+        position: relative;
+        left: -100px;
+        top: 200px;
+        box-shadow: 2px 2px 5px 1px rgb(148, 143, 99);
+      }
+      .card3 {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        box-shadow: 2px 2px 5px 1px rgb(148, 143, 99);
+      }      
+      .card4 {
+        position: relative;
+        left: -104px;
+        top: 400px;
+        box-shadow: 2px 2px 5px 1px rgb(148, 143, 99);
+      } 
+      .card5 {
+        position: relative;
+        left: -210px;
+        top: 200px;
+        transform: rotateZ(270deg);
+        box-shadow: -2px 2px 8px 1px rgb(148, 143, 99);
+      }
+      .card6 {
+        position: relative;
+        left: 220px;
+        top: 14px;
+        box-shadow: 2px 2px 5px 1px rgb(148, 143, 99);
+      }
+      
+      
+      
+      
+     </style>   
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+ 
+
+ <div class = "main">
+          <h1><span class ="header"> Question Bounty Place</span> </h1>          
+          <hr/>
+          <br/>
+   
+      <div class= "event" id="events"> <span class = "badge badge-light"> <strong>Your address : <span id="accountAddress"><br/><br/> </span> </strong> </span></div>
+      <br/>
+      
+ 
+  
+      <div class="container">
+      <div class="row"></div>
+          <div class="col-sm-8 col-sm-push-2">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div id="list">
+
+              
+                    <div class= "questionlist" id="template" style="display: none;">
+                     <div class="panel panel-default panel-fortuneChain">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Question No. <span class="qId"></span> </strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                           <span class="badge badge-primary" > <span class="getQuestionState" ></span> </span> </h3>
+                      </div>
+                      <div class="panel-body">
+                        <div class="card_image">
+                          <img style="width: 100px;" class="card1" src="" >
+                          <img style="width: 100px;" class="card2" src="" >
+                          <img style="width: 100px;" class="card3" src="" >
+                          <img style="width: 100px;" class="card4" src="" >
+                          <img style="width: 100px;" class="card5" src="" >
+                          <img style="width: 100px;" class="card6" src="" >
+                        </div>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr>
+                        <strong>Question Number</strong>: <span class="qId"></span><br/>
+                        <strong>Category</strong>: <span class="qType"></span><br/>
+                        <strong>Question</strong>: <span class="qContent"></span><br/>
+                        <strong>Bounty Price(ETH)</strong>: <span class="bountyPrice"></span><br/>
+                        <strong>Status</strong>: <span class="getQuestionState"></span><br/><br/>
+                        
+                        <button class="btn btn-info btn-listing" 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#registerModal">
+                          Registration
+                         </button>
+                         <button class="btn btn-info btn-answer" 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#solutionInputModal" 
+                          style="display: none;">
+                          Answer 
+                        </button>
+                        <button class="btn btn-info btn-check" 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#solutionCheckModal" 
+                          style="display: none;">
+                          Check 
+                        </button>
+                        <button class="btn btn-warning btn-solved" 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#solutionInputModal" 
+                          style="display: none;"
+                          disabled="true">
+                          Solved!
+                        </button>
+                        <button class="btn btn-warning btn-getsolution  " 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#getFullSolutionModal" 
+                          style="display: none;">
+                          Open Full solution
+                        </button>
+                        <button class="btn btn-dismiss btn-info " 
+                          type="button" 
+                          data-toggle="modal" 
+                          data-target="#questionDismissModal" 
+                          style="display: none;">
+                          Dismiss
+                        </button>
+                        <button class="btn btn-warning btn-dismissed" 
+                          type="button" 
+                          style="display: none;">
+                          Question Dismissed
+                        </button>
+                      </div>
+                      <div class="panel-footer">          
+                                  
+                    </div>
+                </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+      </div>   
+
+
+      
+    <div class="modal fade" tabindex="-1" role="dialog" id="registerModal"><!-- buyModal은 위 매입의 data-target="#buyModal"의 값과 매치 시켜야 함 -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Register as the solutionist of this question</h4>
+          </div>
+          <div class="modal-body">
+              <input type="hidden" id="qIdRegModal" />
+              <input type="hidden" id="bountyPrice" />
+              <input type="hidden" id="entryFee" />
+              <div class="alert alert-warning alert-dismissible fade in" role="alert" >
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+                  <strong> 1. To register, you need to sent <span id="getFeeRate"> </span> % of this question's bounty price for entry fee</strong> <br/>
+                  <strong> 2. When you success to listed as solutionist at this question, you should write solution within 3 days</strong> <br/>
+                  <strong>    after 3 days, Questioner can dismiss this question</strong> <br/>                         
+             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Give up</button>
+            <button type="button" class="btn btn-primary" onclick="App.registerSolutionist(); return false;">Register with <span id="getEntryFee"> </span> ETH </button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="solutionInputModal"><!-- 위 매입자 정보의 data-target="#buyerInfoModal"의 값과 매치 시켜야 함 -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Questioner Information</h4>
+          </div>
+          <div class="modal-body">
+            <strong>Question id </strong>: <span id="questionId"></span><br/>
+            <strong>Bounty Price</strong>: <span id="questionBprice"></span><br/>
+            <strong>Question category</strong>: <span id="questionCategory"></span><br/>
+            <strong>Question</strong>: <span id="questionDetail"></span><br/>      
+            <strong>Name</strong>: <span id="questionerName"></span><br/>
+            <strong>Birth of Date</strong>: <span id="questionerBdate"></span><br/>
+            <strong>Gender</strong>: <span id="questionerGender"></span><br/>
+            <hr>
+            <strong> 100 characters of Your solution will be demonstrated to questioner, <br/> </strong>
+            <strong> If your solution accepted by questioner, <br/>then you can get <span id="getComissionRate"> </span> % of this question's bounty price (remain is commission)<br/></strong>
+            <strong> Your prize will be <span id="getEarnPrice"> </span> ETH </strong>
+            <input type="hidden" id="qIdSoutionInputModal" />
+            <input type="text" class="form-control" id="solutionContent" maxlength="800" placeholder="Write Solution (must be over than 100 characters and less than 800 characters)" />
+            <div class="alert alert-warning alert-dismissible fade in" role="alert" >
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+                <strong> To Submit, you need to send only gas fee <br/> (gas limit 3000000 would be be safe)</strong> 
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="App.offerSolution(); return false;"> Submit solution </button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="solutionCheckModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Solution Information</h4>
+            </div>
+            <div class="modal-body">
+              <strong>Solutionist Level</strong>: <span id="solutionistLevel"></span> <br/>
+              <strong>Solution Average Grade</strong>: <span id="solutionAWGrade"></span> <br/>
+              <strong>Solution Demo</strong>: " <span id="solutionDemo"></span> " <br/>
+              <hr>
+              <input type="hidden" id="qIdSoutionCheckModal" />
+              <div class="alert alert-warning alert-dismissible fade in" role="alert" >
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+                  <strong> If you want to see Full solution, click 'accept' button  <br/> If you click 'reject' button then your question will be waiting for another solutionists</strong> 
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="App.acceptSolution(); return false;"> Accept </button>
+              <button type="button" class="btn btn-primary" onclick="App.rejectSolution(); return false;"> Reject </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="getFullSolutionModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Full Solution</h4>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" id="qIdFullSolutionModal" />
+                <strong>Full Solution</strong>:<br/> <span id="fullSolution"> </span> <br/>
+                <hr>              
+                <strong>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                5</strong>
+                <input type="range" id="setSolutionGrade" min="0" max="5" step ="1" list="tickmarks" placeholder="Give This Solution Grade 0 ~ 5" />
+                <datalist id="tickmarks">
+                  <option value="0" label="0">
+                  <option value="1" label="1">
+                  <option value="2" label="2">
+                  <option value="3" label="3">
+                  <option value="4" label="4">
+                  <option value="5" label="5">
+                </datalist>
+                <hr>
+                <div class="alert alert-warning alert-dismissible fade in" role="alert" >
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+                    <strong> When you give grade of this solution from 0 to 5 <br/> solutionist can get grade point and it will be apply at solutionist's weighted average grade</strong><br/>
+                    <strong> This weight is given as much as the number of ETH <br/> set solution grade is for better upgraded solution, please carefully give grade to this solution</strong>  
+               </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="App.setSolutionGrade(); return false;"> Confirm Solution Grade </button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="questionDismissModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Question Dismiss Information</h4>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="qIdDismissModal" />
+            <div class="alert alert-warning alert-dismissible fade in" role="alert" >
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+                <strong> When you click 'Confirm dismiss' button at this window <br/> Your bounty fund will be return to your wallet address which is set this question</strong><br/>
+                <strong> but, If there is registered solutionist of this question, <br/> it can not be dismissed within 3 days from the solutionist register time</strong>  
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="App.dismissQuestion(); return false;"> Confirm dismiss this question </button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app_question_index.js"></script>
+    <script src="js/utf8.js"></script>
+  </body>
+</html>

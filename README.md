@@ -16,12 +16,6 @@ your information is combined block information and it can output by the numbers.
 Tarot card has 78 cards within number and character and symbols. It is most famous and interesting counselling tool. 
 Block chain choose a number with mixed encrypted personal and block information. User interface web service will show you which card is chosen by blockchain within 6 cards (European caltic cross spread). These beautiful cards combinations interesting but you can not interpret by your self. Therefore solutionist is needed for this counselling. 
 
-1) how to get start 
-download files, and 
-<preb>“truffle migrate –complete-all –reset –network ganache (local test)”<
-
-“npm run dev”
-
 # 2.User story
 
 I have a very important and unresolved question. I open fortune chain web site and input my name, date of birth, question category, and the question and gender. then I set bounty price for this question as 0.5 ETH. 
@@ -32,8 +26,20 @@ Oh, my question card status is changed set to solution pending. It means one of 
 
 my question card status changed again, finally solution is offered from registered solutionists. I click check button, there is part of full solutions. it is good start. The solutionist level and average grade is good. I clicked accept button then I get full solution, I read and checking with tarot card spread so it is more clear to what is meaning of this cards. Therefore I set the solution grade to 4/5 points 
 
+# 4. how to get start 
+download files, and 
 
-# 3.State 
+<pre><code>npm install</code></pre>
+
+<pre><code>truffle migrate --compile-all --reset --network ganache</code></pre>
+
+<pre><code>npm run dev</code></pre>
+
+then open chrome with address 
+http://localhost:3000
+
+
+# 5.State 
 ![Alt text](fortune_chain.png)
 *questioner
 1. for creating and setting new question, 
@@ -67,7 +73,7 @@ then the registered solutionist record is deleted
 	3) offered solution reject 
 
 
-# 4. specification : requirement 
+# 6. specification : requirement 
 
 1. user interface
 -> localhost:3000 

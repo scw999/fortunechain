@@ -1,5 +1,5 @@
-3. Design Pattern
-  1) circuit breaker
+# Design Pattern
+  ## 1) circuit breaker
   
 --> this design patten used at FortuneChain.sol
   
@@ -21,7 +21,7 @@
     }
 
 
-  2) state machine 
+  ## 2) state machine 
 
 --> this design patten used at FortuneChain.sol
 
@@ -29,7 +29,7 @@ Qstate : Set -> Pending -> offered -> Accepted or Rejected -> Dismissed
 
 refer readme.md. 
   
-  3) restricted 
+  ## 3) restricted 
  --> this design patten used at FortuneChain.sol as below 
   
 
@@ -67,14 +67,14 @@ modifier onlyOwner() {
         owner = msg.sender;
     } 
   
-  4) mortal
+ ## 4) mortal
  --> this design patten used at FortuneChain.sol as below
  
     function kill() public onlyOwner onlyInEmergency {
         selfdestruct(owner);
     }
 
-  5) speed bumper
+  ## 5) speed bumper
 
 --> speed bumber design pattern is not used due to time not critical project
 

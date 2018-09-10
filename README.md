@@ -29,10 +29,18 @@ my question card status changed again, finally solution is offered from register
 # 4. how to get start 
 download files, and 
 
+in root directory 
+
+## for start 
 <pre><code>npm install</code></pre>
 
+## for run test
+<pre><code>truffle test</code></pre>
+
+## for run compile and migrate
 <pre><code>truffle migrate --compile-all --reset --network ganache</code></pre>
 
+## for open with user application
 <pre><code>npm run dev</code></pre>
 
 then open chrome with address 

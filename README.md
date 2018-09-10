@@ -49,15 +49,22 @@ http://localhost:3000
 then you can see as below
 ![Alt text](2.jpg)
 
-### input your questions and information and click button 'question set'
+## set ganache network 
+hostname: localhost
+port :8545
+network ID : 5778
+MNEMONIC : shaft clap gun expire course crouch magnet furnace grant shop used vacant
+![Alt text](ganache_set.jpg)
+
+### 1) input your questions and information and click button 'question set'
 ![Alt text](userinterface2.jpg)
 
-### then you can see your question tarot card like below
+### 2) then you can see your question tarot card like below
 ![Alt text](userinterface.jpg)
 
-### and login with other account and registration and send answer
+### 3) login with other account and registration and send answer
 
-### and login with first account then accept or reject
+### 4) login with first account then accept or reject
 
 ## it will progress as below state machine
 
